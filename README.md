@@ -26,15 +26,15 @@ pianificazione degli esperimenti da fare
 - lista dei repository
 - 
 
-http:Http;
-this.http
+     http:Http;
+     this.http
      .get('https://api.github.com/repos/flwblog/blog/contents')
      .map(
          res=> res.json()
          )
       .subscribe(
          res => this.posts = res
- );
+      );
 
 
-
+http://solutionoptimist.com/2013/12/28/awesome-github-tricks/
