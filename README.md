@@ -24,3 +24,17 @@ pianificazione degli esperimenti da fare
 
 -- cominciamo da alcuni pezzi chiave:
 - lista dei repository
+- 
+
+http:Http;
+this.http
+     .get('https://api.github.com/repos/flwblog/blog/contents')
+     .map(
+         res=> res.json()
+         )
+      .subscribe(
+         res => this.posts = res
+ );
+
+
+
